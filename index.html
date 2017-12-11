@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="html framework, front end framework, css framework, html5 css3 framework">
+		<meta name="description" content="Crutch is a simple and clean front-end framework built on SCSS/SASS and designed to accomodate for the web developer who's more focused on function than form and need a crutch for their user interface development.">
+
+		<title>Welcome to Crutch.</title>
+		<link rel="stylesheet" type="text/css" href="dist/css/crutch.min.css">
+	</head>
+	<body class="container-desktop-wide bg-dark text-white row flex-nowrap">
+		<aside class="item-third margin-left-nothing fixed-left display-tablet-up-only margin-right-most padding-left-nothing">
+			<nav class="row navigation flex-direction-column justify-content-start padding-right-most margin-right-most margin-left-nothing padding-left-nothing">
+				<a class="navigation-logo" href="#top">Crutch</a>
+				<a class="navigation-link" href="#typography">Typography</a>
+				<a class="navigation-link" href="#layout">Layout</a>
+				<a class="navigation-link" href="#forms-and-input">Forms and Input</a>
+				<a class="navigation-link" href="#utilities">Utilities</a>
+			</nav>
+		</aside>
+
+		<div class="margin-left-most padding-left-most display-tablet-up-only"></div>
+
+		<main class="item padding-left-more">
+			<section class="row margin-top-nothing">
+				<header class="item margin-top-nothing" id="top">
+					<h1 class="display-biggest">Welcome to Crutch.</h1>
+					<div class="pane pane-rounded bg-light text-dark">
+						<p class="pane-content text-more">Crutch is a simple and clean CSS framework offering straightforward, responsive front-end development in a smaller and easier to understand package than other similar frameworks. Crutch uses a simple three-column grid system for layout and comes with a host of utilities for margin, padding, positioning, and flexbox classes as well as default styling for many HTML elements.</p>
+					</div>
+				</header>
+			</section>
+
+			<section class="row" id="typography">
+				<div class="item">
+					<p class="display-big">Typography</p>
+
+					<div class="pane pane-rounded bg-light text-dark">
+						<div class="pane-content">
+							<p>Crutch's typography styling is appealing and modern. Several text-manipulation classes are also included for the user as well.</p>
+							<p>	Headings appear as follows:
+								<span class="h1">.h1</span>
+								<span class="h2">.h2</span>
+								<span class="h3">.h3</span>
+								<span class="h4">.h4</span>
+								<span class="h5">.h5</span>
+								<span class="h6">.h6</span>
+							</p>
+
+							<p>	In addition to styling for headings, Crutch includes special classes for large text display.</p>
+							<p>These classes are:<br>
+								<span class="display-medium">.display-medium</span><br>
+								<span class="display-big">.display-big</span><br>
+								<span class="display-bigger">.display-bigger</span><br>
+								<span class="display-biggest">.display-biggest</span>
+							</p>
+
+							<p>Text color and visibility can also be controlled via these classes: .text-dark .text-light .text-hide</p>
+
+							<dl>Manipulation of text is acheived through these classes:
+								<dd>.text-transform-lowercase</dd>
+								<dd>.text-transform-uppercase</dd>
+								<dd>.text-transform-capitalize</dd>
+								<dd>.font-weight-normal</dd>
+								<dd>.font-weight-bold</dd>
+								<dd>.font-weight-italic</dd>
+								<dd>.text-left</dd>
+								<dd>.text-right</dd>
+								<dd>.text-center</dd>
+								<dd>.text-justify</dd>
+								<dd>.text-white-space-nowrap</dd>
+								<dd>.text-truncate</dd>
+								<dd>.underline</dd>
+								<dd>.strike-through</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="row" id="layout">
+				<div class="item">
+					<p class="display-big">Layout and Positioning</p>
+				</div>
+
+				<div class="pane pane-rounded bg-light text-dark">
+					<p class="pane-content">Crutch uses a simple three column grid system for layout. Simply create a parent container called a .row, and within that row use either .item, .item-half, or .item-third to section off content. At mobile resolutions these items stack upon one-another. To keep these items from doing so, simply add the class .flex-nowrap to the parent row container element.</p>
+
+					<dl class="pane-content">Included along with layout classes are a few classes to control positiong. These classes are:
+						<dd>.fixed-top</dd>
+						<dd>.fixed-bottom</dd>
+						<dd>.fixed-left</dd>
+					</dl>
+				</div>
+			</section>
+
+			<section class="row">
+				<div class="item">
+					<p class="display-big text-center">The Rest of the Documentation is Coming Soon!</p>
+				</div>
+			</section>
+
+			<footer>
+				<div class="row small text-center">
+					<div class="item">
+						<p>Designed and Implemented by Brandon Ubben</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+		<script type="text/javascript" src="js/crutch.js"></script>
+	</body>
+</html>
