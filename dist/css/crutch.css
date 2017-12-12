@@ -798,6 +798,10 @@ a:hover {
   background-color: transparent !important;
 }
 
+.bg-black {
+  background-color: #000 !important;
+}
+
 .border {
   border: 1px solid #bbbbbb !important;
 }
