@@ -25,30 +25,43 @@
 	max-width: $container-width-mobile;
 }
 
-.item, .item-half{
+.item {
 	@include item();
 	width: 100%;
 }
 
-.item-third {
+.item-three-quarter {
+	@include item();
+	width: 66.6%;
+}
+
+.item-half {
 	@include item();
 	width: 50%;
+}
+
+.item-quarter {
+	@include item();
+	width: 33.3%;
 }
 
 .row{
 	@include row();
 }
 
-
 @media screen and (min-width: 640px) {
-	.item-third{
+	.item-quarter {
 		@include item();
-		min-width: 300px;
-		max-width: 30.82%;
+		width: 25% !important;
 	}
 
-	.item-half{
+	.item-half {
 		@include item();
-		max-width: 47.5%;
+		width: 50% !important;
+	}
+
+	.item-three-quarter {
+		@include item();
+		width: 75% !important;
 	}
 }

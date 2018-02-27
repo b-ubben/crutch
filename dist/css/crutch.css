@@ -623,7 +623,7 @@ a:hover {
   max-width: 414px;
 }
 
-.item, .item-half {
+.item {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   padding: 2%;
@@ -631,12 +631,28 @@ a:hover {
   width: 100%;
 }
 
-.item-third {
+.item-three-quarter {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding: 2%;
+  margin: 1.25rem auto;
+  width: 66.6%;
+}
+
+.item-half {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   padding: 2%;
   margin: 1.25rem auto;
   width: 50%;
+}
+
+.item-quarter {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding: 2%;
+  margin: 1.25rem auto;
+  width: 33.3%;
 }
 
 .row {
@@ -649,13 +665,12 @@ a:hover {
 }
 
 @media screen and (min-width: 640px) {
-  .item-third {
+  .item-quarter {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     padding: 2%;
     margin: 1.25rem auto;
-    min-width: 300px;
-    max-width: 30.82%;
+    width: 25% !important;
   }
 
   .item-half {
@@ -663,7 +678,15 @@ a:hover {
         flex-basis: auto;
     padding: 2%;
     margin: 1.25rem auto;
-    max-width: 47.5%;
+    width: 50% !important;
+  }
+
+  .item-three-quarter {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    padding: 2%;
+    margin: 1.25rem auto;
+    width: 75% !important;
   }
 }
 .crutch-form input[type=text],
@@ -1133,6 +1156,13 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+}
+
+.fixed-right {
+  position: fixed;
+  top: 0;
+  right: 0;
   bottom: 0;
 }
 
